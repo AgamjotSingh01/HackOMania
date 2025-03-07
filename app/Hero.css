@@ -1,0 +1,30 @@
+.announce{
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(211, 203, 203);
+}
+
+.alert{
+    margin-top: 15px;
+    font-size: 18px;
+    color: #f77a8f;
+}
+
+.theme{
+    margin-top: 25px;
+    font-weight: 200;
+    color: #e7c3d1d3;
+}
+
+.hashtag{
+    color: rgb(116, 116, 160);
+}
+
+.register{
+    font-size: 25px;
+    margin-top: 26px;
+}
+
+.register-button{
+    margin-bottom: 15px;
+}

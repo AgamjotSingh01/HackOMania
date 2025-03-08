@@ -1,33 +1,83 @@
-.page-heading{
+.page-heading {
     height: auto !important;
     margin-top: 20px;
     font-size: 20px !important;
 }
 
-.domain-cards{
+.domain-cards {
     display: flex;
-    gap: 30px;
+    gap: 40px;
+    width: 60vw;
 }
 
-.domain-card{
-    width: 25vw;
+.domain-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* width: 25vw; */
     text-align: center;
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 102, 204, 0.15) 100%);
+    /* border-width: 1px;
+    border-style: solid; */
+    /* border-color: linear-gradient(90deg, #f5e9ee, #f39dab, #ff6a88); */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.domain-card-svg img{
+.domain-card-points {
+    margin-top: 15px;
+    text-align: left;
+    font-size: 16px;
+    color: #d1d5db; /* Soft grayish-white for readability */
+}
+
+.domain-card-points ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.domain-card-points li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.domain-card-points li::before {
+    content: "✔"; /* Checkmark bullet */
+    color: #38bdf8; /* Accent color matching your theme */
+    font-size: 18px;
+}
+
+
+.domain-card-svg img {
     width: 60px;
     height: 60px;
+    margin-bottom: 20px;
 }
 
-.domain-card-heading{
+.domain-card-heading {
     font-size: 30px;
 }
 
+.domain-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.domain-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
 @media (max-width: 1100px) {
-    .domain-cards{
+    .domain-cards {
         display: flex;
         gap: 30px;
         flex-direction: column;
     }
-    
-}    
+
+}

@@ -1,0 +1,22 @@
+.about-container{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    gap: 15px;
+}
+
+.about-heading{
+    font-size: 20px;
+    color: #ffcce0d3;
+}
+
+.about-content{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+li{
+    list-style: none;
+}
+

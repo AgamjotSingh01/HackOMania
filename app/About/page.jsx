@@ -52,7 +52,7 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="about-container">
+            <div className="about-container last">
                 <div className="about-heading">📢 How to Register?</div>
                 <div className="about-content">
                     Ready to join Hack-O-Mania'25? Follow these simple steps to secure your spot and start your hackathon journey.

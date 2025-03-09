@@ -49,3 +49,11 @@
     visibility: visible;
     transform: translateY(0);
 }
+
+
+@media (max-width: 1100px) {
+    .faq-container {
+        width: 90%;
+        margin: auto;
+    }
+}

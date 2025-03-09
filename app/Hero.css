@@ -23,3 +23,15 @@
 .register-button{
     margin-bottom: 15px;
 }
+
+.prize-pool {
+    font-size: 15px;
+    font-weight: 200;
+    color: #e7c3d1d3;
+    text-align: center;
+}
+
+.prize-amount {
+    font-weight: 600;
+    color: #f77a8f; /* Matching the alert text color */
+}

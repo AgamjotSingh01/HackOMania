@@ -1,17 +1,30 @@
-"use client"
-import { useState } from "react";
+"use client";
+import { useState, useEffect } from "react";
 import Link from "next/link";
-import "./Navbar.css";
 import Image from "next/image";
+import "./Navbar.css";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+
+    // Close menu when clicking outside
+    useEffect(() => {
+        const handleOutsideClick = (event) => {
+            if (menuOpen && !event.target.closest(".navbar")) {
+                setMenuOpen(false);
+            }
+        };
+        document.addEventListener("click", handleOutsideClick);
+        return () => {
+            document.removeEventListener("click", handleOutsideClick);
+        };
+    }, [menuOpen]);
 
     return (
         <nav className={`navbar ${menuOpen ? "menu-open" : ""}`}>
             {/* Logo on the left */}
             <div className="navbar-logo">
-                <Link href="/"><Image src="/logo.png" width={200} height={200} alt="logo" />  </Link>
+                <Link href="/">STME NMIMS</Link>
             </div>
 
             {/* Centered Links */}
@@ -21,7 +34,7 @@ const Navbar = () => {
                     <li style={{ animationDelay: "0.4s" }}><Link href="/About">About</Link></li>
                     <li style={{ animationDelay: "0.6s" }}><Link href="/Domains">Domains</Link></li>
                     <li style={{ animationDelay: "0.8s" }}><Link href="/FAQ">FAQ's</Link></li>
-                    <li style={{ animationDelay: "1s" }}><Link href="/contact">Contact</Link></li>
+                    <li style={{ animationDelay: "1s" }}><Link href="/Contact">Contact</Link></li>
                 </ul>
 
                 {/* Register button (Visible only in mobile menu) */}
@@ -34,7 +47,10 @@ const Navbar = () => {
             {/* Mobile Hamburger Button */}
             <button 
                 className={`hamburger ${menuOpen ? "active" : ""}`} 
-                onClick={() => setMenuOpen(!menuOpen)}
+                onClick={(e) => {
+                    e.stopPropagation(); // Prevent closing when clicking on the button itself
+                    setMenuOpen(!menuOpen);
+                }}
             >
                 <span></span>
                 <span></span>
@@ -45,3 +61,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+    

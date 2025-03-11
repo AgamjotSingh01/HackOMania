@@ -34,19 +34,23 @@ const Navbar = () => {
                     <li style={{ animationDelay: "0.4s" }}><Link href="/About">About</Link></li>
                     <li style={{ animationDelay: "0.6s" }}><Link href="/Domains">Domains</Link></li>
                     <li style={{ animationDelay: "0.8s" }}><Link href="/FAQ">FAQ's</Link></li>
-                    <li style={{ animationDelay: "1s" }}><Link href="/Contact">Contact</Link></li>
+                    <li style={{ animationDelay: "1s" }}><Link href="/Explore">Explore</Link></li>
+                    <li style={{ animationDelay: "1.2s" }}><Link href="/Contact">Contact</Link></li>
                 </ul>
 
                 {/* Register button (Visible only in mobile menu) */}
-                <button className="navbar-button mobile-only">Register</button>
+
+                <Link href={'https://forms.gle/FsfTucQEL1jP3orC6'}><button className="navbar-button mobile-only">Register</button></Link>
+
             </div>
 
             {/* Desktop Register Button */}
-            <button className="navbar-button desktop-only">Register</button>
+            <Link href={'https://forms.gle/FsfTucQEL1jP3orC6'}><button className="navbar-button desktop-only">Register</button></Link>
+
 
             {/* Mobile Hamburger Button */}
-            <button 
-                className={`hamburger ${menuOpen ? "active" : ""}`} 
+            <button
+                className={`hamburger ${menuOpen ? "active" : ""}`}
                 onClick={(e) => {
                     e.stopPropagation(); // Prevent closing when clicking on the button itself
                     setMenuOpen(!menuOpen);
@@ -61,4 +65,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-    

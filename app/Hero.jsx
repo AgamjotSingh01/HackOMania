@@ -18,7 +18,7 @@ export default function Hero() {
 
 
             <div className="register-button">
-                <Button href={'/'} text={'Register'} />
+                <Button href={'https://forms.gle/FsfTucQEL1jP3orC6'} text={'Register'} />
             </div>
             <div className="hashtag">#InnovateBeyondLimits 🚀</div>
         </div>

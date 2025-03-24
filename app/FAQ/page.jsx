@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     question: "When is the registration deadline?",
-    answer: "Registrations will close on March 25, 2025.",
+    answer: "Registrations will close on March 30, 2025.",
   },
   {
     question: "Where will the hackathon take place?",

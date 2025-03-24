@@ -15,7 +15,7 @@ export default function About() {
       <div className="about-container">
         <div className="about-heading">What is Hack-O-Mania'25?</div>
         <div className="about-content">
-          Hack-O-Mania'25 is an exciting 24-hour inter-college hackathon
+          Hack-O-Mania'25 is an exciting 30-hour inter-college hackathon
           designed for B.Tech and school (Class 11th and 12th) students students across India. It brings together bright
           minds to create impactful projects in AI/ML and Full-Stack Web
           Development. Compete, innovate, and win exciting prizes while pushing
@@ -39,7 +39,7 @@ export default function About() {
         <div className="about-list">
           <ul>
             <li>
-              ✔ <strong>Event Type:</strong> 24-Hour Inter-College Hackathon
+              ✔ <strong>Event Type:</strong> 30-Hour Inter-College Hackathon
             </li>
             <li>
                 ✔ <strong>Event Mode:</strong> Hybrid (On-campus + Remote Collaboration) 

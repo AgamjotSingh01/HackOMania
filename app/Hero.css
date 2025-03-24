@@ -1,0 +1,67 @@
+.announce{
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(211, 203, 203);
+}
+
+.alert{
+    margin-top: 15px;
+    font-size: 18px;
+    color: #02b9bc;
+}
+
+.theme{
+    margin-top: 25px;
+    font-weight: 200;
+    color: #cde4e4;
+}
+
+.hashtag{
+    color: #7a8686;
+}
+
+.register-button{
+    margin-bottom: 15px;
+}
+
+.prize-pool {
+    font-size: 15px;
+    font-weight: 200;
+    color: #cde4e4;
+    text-align: center;
+}
+
+.prize-amount {
+    font-weight: 600;
+    color: #6AC1C2; /* Matching the alert text color */
+}
+
+.heading-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.earth-container {
+    position: fixed;
+    bottom: -200px; /* Move it slightly down so only half is visible */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px; /* Adjust size as needed */
+    height: 300px;
+    overflow: hidden; /* Ensures only half of it is visible */
+}
+
+.earth {
+    width: 100%;
+    height: auto;
+    animation: rotateEarth 60s linear infinite;
+}
+
+@keyframes rotateEarth {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

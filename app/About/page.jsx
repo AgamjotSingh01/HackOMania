@@ -42,7 +42,7 @@ export default function About() {
               ✔ <strong>Event Type:</strong> 30-Hour Inter-College Hackathon
             </li>
             <li>
-                ✔ <strong>Event Mode:</strong> Hybrid (On-campus + Remote Collaboration) 
+                ✔ <strong>Event Mode:</strong> On-campus
             </li>
             <li>
               ✔ <strong>Domains:</strong> AI/ML & Full-Stack Web Development
@@ -78,7 +78,7 @@ export default function About() {
             </li>
             <li>
               ⚡ <strong>Submission:</strong> Submit code, documentation, and a
-              short video demo.
+              Presentation explaining the project.
             </li>
             <li>
               ⚡ <strong>Judging Criteria:</strong> Innovation (30%), Technical

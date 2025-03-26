@@ -4,7 +4,7 @@ import SpaceBackground from "@/components/SpaceBackground";
 
 export const metadata = {
   title: "Hack-O-Mania'25",
-  description: "24hr Hackathon by STME NMIMS",
+  description: "30hr Hackathon by STME NMIMS",
 };
 
 export default function RootLayout({ children }) {
